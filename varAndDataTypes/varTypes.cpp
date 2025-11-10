@@ -1,4 +1,4 @@
-//     Types of variable 
+// Types of variable 
 // Local variable 
 // Global variable
 // Static variable
@@ -58,11 +58,11 @@ int main(){
     // Static Variables
     static bool isNotVarified{false};
     cout << isNotVarified << "\n";
-    counter();
-    counter();
-    counter();
-    counter();
-    counter();
+    counter();  // counter 1
+    counter();  // counter 2
+    counter();  // counter 3
+    counter();  // counter 4 
+    counter();  // counter  5
     
 
     
