@@ -1,13 +1,13 @@
 // we can see the intilization style in c++
 
 // there are total four type of intialization style
-// 1 default initilization - it will store randome number and anything during only intilize
+// 1 default initilization - it will store random number and anything during only intilize
 // 2 copy     || - it will copy the another value 
 // 3 direct ||
 // 4 uniform ||
 
 
-// default initilization - it will store randome number and anything during only intilize
+// default initilization - it will store random number and anything during only intilize
 #include <iostream>
 using namespace std;
 
