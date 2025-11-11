@@ -76,24 +76,81 @@ int main()
 
 
     // Q5. Grade Calculation
-
+    
     // Input marks (0–100) and print the grade using the following rules:
-
     // >=90: Grade A
-
     // >=75: Grade B
-
     // >=50: Grade C
-
     // <50: Fail
-
     // Use if-else-if ladder.
 
-    // Q6. Simple Calculator
 
-    // Build a simple calculator using switch.
-    // Input: two numbers and an operator (+, -, *, /)
-    // Output: the result of the operation.
+    float marks;
+
+    cout << "Enter your marks: ";
+    cin >> marks;
+
+    if (marks >= 90){
+        cout << "Grade A";
+    }
+    else if (marks >= 75 && marks < 90){
+        cout << "Grade B";
+    }
+    else if (marks >= 50 && marks < 75){
+        cout << "Grade C";
+    }
+    else if ( marks < 50){
+        cout << "Fail";
+    }
+    else{
+        cout << "Provide marks in range";
+    }
+
+
+   // Q6. Simple Calculator
+// Build a simple calculator using switch.
+// Input: two numbers and an operator (+, -, *, /)
+// Output: the result of the operation.
+
+int firstNumber ;
+char operation;
+int secondNumber;
+int result;
+
+cout << "Calculator" <<endl;
+
+cout << "Enter first number:" ;
+cin >> firstNumber;
+
+cout << "Enter operation: ";
+cin >> operation;
+
+cout << "Enter second number: ";
+cin >> secondNumber;
+
+switch (operation) {
+
+    case '+':
+            result = firstNumber + secondNumber;
+            cout << result;
+            break;
+    case '-':
+            result = firstNumber - secondNumber;
+            cout << result;
+            break;
+    case '*':
+            result = firstNumber * secondNumber;
+            cout << result;
+            break;
+    case '/':
+            result = firstNumber / secondNumber;
+            cout << result;
+            break;
+    default:
+        cout << "Invalid operation";
+    
+            
+}
 
     // Q7. Leap Year Check
 

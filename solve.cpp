@@ -1,20 +1,29 @@
 #include <iostream>
 using namespace std;
 
-
-int main(){
-
-    int age;
+int main() {
     
-    cout << "Enter your age for cheacking your vote elegiblity: ";
-    cin >> age;
 
-    if(age >= 18){
-        cout << "You'r elegible for voating" << endl;
-    }
-    else {
-        cout << "Sorry you are not elegible for voating";
-    }
 
-    return 0;
+
+
+
+
+
+
+
+
+
+
+// Q7. Leap Year Check
+// Write a program to check if a given year is a leap year or not.
+// Conditions:
+// Divisible by 4 → leap year
+// But if divisible by 100 → not a leap year
+// Unless divisible by 400 → leap year again
+// Use nested if.
+
+
+    return 0;;
 }
+
