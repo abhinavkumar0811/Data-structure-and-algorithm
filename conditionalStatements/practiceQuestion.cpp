@@ -62,6 +62,19 @@ int main()
     // Q4. Voting Eligibility
     // Take a person’s age as input and check if they are eligible to vote (age ≥ 18).
 
+    int age;
+    
+    cout << "Enter your age for cheacking your vote elegiblity: ";
+    cin >> age;
+
+    if(age >= 18){
+        cout << "You'r elegible for voating" << endl;
+    }
+    else {
+        cout << "Sorry you are not elegible for voating";
+    }
+
+
     // Q5. Grade Calculation
 
     // Input marks (0–100) and print the grade using the following rules:
