@@ -152,18 +152,35 @@ switch (operation) {
             
 }
 
-    // Q7. Leap Year Check
 
-    // Write a program to check if a given year is a leap year or not.
-    // Conditions:
 
-    // Divisible by 4 → leap year
 
-    // But if divisible by 100 → not a leap year
+// Q7. Leap Year Check
+// Write a program to check if a given year is a leap year or not.
+// Conditions:
+// Divisible by 4 → leap year
+// But if divisible by 100 → not a leap year
+// Unless divisible by 400 → leap year again
+// Use nested if.
 
-    // Unless divisible by 400 → leap year again
 
-    // Use nested if.
+cout << "leap year calculator" << "\n";
+
+int year;
+
+cout << "Enter year";
+cin >> year;
+
+if (year%4==0 && year%100 !=0 || year%400==0){
+    cout << "This year " << year <<  " is a leap year" << endl;
+}
+else{
+    cout << "This year " << year <<  " is not a leap year" << endl;
+}
+
+
+
+
 
     // Q8. Character Type Checker
 
