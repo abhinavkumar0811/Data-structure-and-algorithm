@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-// write a program of prime number 
+// Q1 write a program of prime number 
 
     
     int value;
