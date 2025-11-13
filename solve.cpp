@@ -14,9 +14,25 @@ int main() {
 
 
 
+cout << "Cheacker" << endl;
+
+char charctor;
+
+cout << "Enter your charactor: ";
+cin >> charctor;
+
+if ((charctor >= "a" && charctor <= "z")){
+    cout << "This is a alphabet charactor" << endl;
+}
+else if (){
+    
+}
+else{
+
+    cout << "This is a special charactor" << endl;
+}
 
 
-
-    return 0;;
+    return 0;
 }
 
