@@ -4,8 +4,9 @@ using namespace std;
 
 int main(){
 
-
 // write a program of prime number 
+
+    
     int value;
     bool isPrimeNumber = true;
 
