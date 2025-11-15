@@ -69,9 +69,20 @@ cout << "Memory size of all the datatype" << endl;
 
 // Takes a char input from the user
 
+char charactor;
+cout << "Enter A charactor for its ascii code: ";
+cin >> charactor;
+int  ascii_value = charactor;
+
 // Prints its ASCII integer value
+    cout << "Ascii code of : " << charactor << " is: " << ascii_value << endl;
+
 
 // Adds 5 to it and prints the resulting character
+
+char ascii_charactor = ascii_value + 5;
+cout << "Ascii charactor of this ascii number is: " << ascii_charactor << endl;
+
 
 // Q3. Implicit vs Explicit Casting
 
@@ -79,9 +90,18 @@ cout << "Memory size of all the datatype" << endl;
 
 // Declares a float variable and assigns it a decimal value
 
+    float float_num = 10.03;
+
 // Converts it to int using implicit casting and prints it
+    int num = float_num;
+    cout << num << endl;
 
 // Converts it to int using explicit casting and prints it
+
+    int explicit_cast = static_cast <int>(float_num);
+    cout << explicit_cast << endl;
+    
+
 
 // Q4. Unsigned / Signed Experiment
 
@@ -89,9 +109,17 @@ cout << "Memory size of all the datatype" << endl;
 
 // Declares a signed int with a negative number
 
+   signed int unsigned_num = -32424232;
+
 // Declares an unsigned int with the same value
+    unsigned int signed_num = -432434;    // here implict conversion perform
+    
 
 // Prints both and observes what happens
+
+    cout << unsigned_num << endl;    // output -32424232
+    cout << signed_num << endl;       // output 432434
+ 
 
 
 
