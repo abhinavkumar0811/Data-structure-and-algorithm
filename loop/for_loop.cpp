@@ -138,8 +138,33 @@ cin >> reversedNumber;
 // ➤ Input: 6 → Output: 0 1 1 2 3 5
 
 
-// Q7 Find the sum of digits of a number
+// Q7 Find the sum of digits of a number                     // -- logic vvi
 // ➤ Input: 1234 → Output: 10
+
+    int digit;
+    cout << "Enter number: " ;
+    cin >> digit;
+
+    int sum = 0;
+
+    while (digit >0){
+        int last_el = digit%10;     // for finding the last element in digit (all digit %10) - reminder 
+         sum += last_el;
+
+        digit /= 10;            // this will return quetent 
+        
+    }
+    cout << "Sum of all digit is: " << sum << endl;
+
+
+
+    int digits = 1234;
+    int result = digits%10;
+    cout << result;
+
+
+ 
+
 
 
 // int number;
@@ -169,3 +194,4 @@ return 0;
 
 
 }
+
