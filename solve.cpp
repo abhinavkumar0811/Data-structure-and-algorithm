@@ -46,3 +46,6 @@ cout << "Sum of n natural number is: " << sum << endl;
 
     return 0;
 }
+
+
+
