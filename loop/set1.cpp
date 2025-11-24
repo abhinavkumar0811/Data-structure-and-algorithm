@@ -1,30 +1,110 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+
 // 1–10: Basic Loops
 
-// Print numbers from 1 to N.
+ //Q1 Print numbers from 1 to N.
+
+    for (int start=0,  end=10; start<=end; start=start+1){
+        cout << start <<endl;
+    }   // unary ++ post incriment work same like the addition 
+
+    cout << "Q1 end here " << "\n";
 
 // Print even numbers from 1 to N.
+    for (int start=1, end=10; start <=end ; start++){
+         if(start%2==0){
+             cout << start << endl;
+         }
+    }
 
-// Print odd numbers from 1 to N.
+    cout << "end of @2" << endl;
 
-// Print numbers in reverse from N to 1.
+//Q2 Print odd numbers from 1 to N.
 
-// Print all multiples of 3 up to N.
+    int number;
+    cout << "Enter number: " ;
+    cin >> number;
 
-// Print all factors of a number.
+    int start=1;
+    while(start <=number){
+        if(start%2 !=0){
+            cout << start << endl;
+        }
+            start++;
+    }
 
-// Count digits in a number.
 
-// Find sum of digits.
+//Q3 Print numbers in reverse from N to 1.
 
-// Find product of digits.
+    int rev_number;     // store random number 
+    cin >> rev_number;
 
-// Print table of a number.
+     int  end=1;
+    while(end <=rev_number){
+        cout<< rev_number << endl;
+        rev_number--;
+    }
+    
 
-// 11–20: Loop Logic Practice
 
-// Find factorial of a number.
+//Q4 Print all multiples of 3 up to N.
 
-// Find power (a^b) using loop.
+    int number;
+    cin >> number;
+
+    int start =1;
+    while(start <=number){
+        if(start%3==0){
+            cout << start << endl;
+        }
+        start = start + 1;
+    }
+
+//Q5 Print all factors of a number.
+      int number;
+    cin >> number;
+
+    int start =1;
+    while(start <=number){   // possible number for divide this number
+        if(number%start==0){
+            cout << start << endl;
+        }
+        start = start + 1;
+    }
+
+//Q6 Count digits in a number.
+
+    // hint - always remove the last digit and count it 
+
+    int number;
+    cin >> number;
+
+    int count = 0;
+
+    while (number>0){
+        number = number / 10; // it will remove the last digit 
+
+            count ++;
+    }
+    cout << number << endl;
+    cout << count << endl;
+
+
+//Q7 Find sum of digits.
+
+//Q8 Find product of digits.
+
+//Q9 Print table of a number.
+
+//Q10 11–20: Loop Logic Practice
+
+//Q11 Find factorial of a number.
+
+//Q12 Find power (a^b) using loop.
 
 // Count vowels in a string.
 
@@ -112,3 +192,6 @@
 // Function to calculate compound interest using loop.
 
 // Function to generate random numbers (manual loop logic) and print them.
+
+    return 0;
+}
