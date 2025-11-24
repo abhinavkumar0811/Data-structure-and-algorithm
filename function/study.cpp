@@ -2,22 +2,21 @@
 using namespace std;
 
 
-A function is a block of reusable code 
+// A function is a block of reusable code 
 
-A function is a block of code that performs a specific task. It allows you to:
-Break down complex problems into smaller, manageable tasks.
-            Avoid code repetition.
-            Make your program modular and easier to debug.
+// A function is a block of code that performs a specific task. It allows you to:
+// Break down complex problems into smaller, manageable tasks.
+//             Avoid code repetition.
+//             Make your program modular and easier to debug.
 
-syntex :-
+// syntex :-
 
-return_type functionName (parameter) {       -- function defination
-    // code 
-}
+// return_type functionName (parameter) {       -- function defination
+//     // code 
+// }
 
-
-functionName(arguments )     function call 
-functionName   function refrence 
+// functionName(arguments )     function call 
+// functionName   function refrence 
 
 
 // parameter - a paramenter which accept the value from the arguments in function declearion
@@ -45,3 +44,7 @@ int main(){
 
 
 }
+
+
+
+

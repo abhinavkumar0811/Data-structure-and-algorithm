@@ -195,5 +195,211 @@ cout << "Ascii charactor of this ascii number is: " << ascii_charactor << endl;
 
 // Prints the ASCII code of the new character
 
+
+// 1. VARIABLES — 100 PRACTICAL QUESTIONS
+
+// Declare two integers and print their sum.
+
+// Declare integer, float, char variables and print them.
+
+// Swap two numbers using a third variable.
+
+// Swap two numbers without using a third variable.
+
+// Declare a constant PI and print its value.
+
+// Take two integers input and print product.
+
+// Declare a boolean and print its value.
+
+// Print memory address of a variable using & operator.
+
+// Create a global variable and print it in main().
+
+// Create a local variable with same name as global and print both.
+
+// Show variable shadowing inside a block.
+
+// Create a static variable in a function and print how it behaves.
+
+// Increment a variable inside a loop and print final value.
+
+// Declare multiple variables in one line and print them.
+
+// Store your name in a char array and print it.
+
+// Declare a reference variable and print both values.
+
+// Modify variable value through reference.
+
+// Store ASCII code of ‘A’ in an int and print.
+
+// Store 10 marks in 10 variables and print average.
+
+// Demonstrate integer overflow.
+
+// Demonstrate float overflow.
+
+// Assign a double value to an int and show truncation.
+
+// Print size of all fundamental variables using sizeof().
+
+// Create a variable inside if block and access outside (show error).
+
+// Reassign value to a variable and print both before/after.
+
+// Show difference between initialization and assignment.
+
+// Use auto to deduce type from a literal.
+
+// Use auto with a complex expression.
+
+// Create an external variable and access it in another file (conceptual).
+
+// Show lifetime difference between static and normal variable.
+
+// Create a register variable and print its value.
+
+// Print value of uninitialized variable (observe).
+
+// Create a volatile variable and increment it.
+
+// Create a mutable variable inside class and modify inside const method.
+
+// Create constexpr variable and print it.
+
+// Use decltype to create another variable of same type.
+
+// Create two same named variables inside two different blocks.
+
+// Take 3 variables: int, float, char; print as formatted output.
+
+// Convert Celsius to Fahrenheit using variables.
+
+// Calculate area of circle using variable radius.
+
+// Take principal, rate, time and compute simple interest.
+
+// Count digits of a number using a variable.
+
+// Find remainder and quotient of division.
+
+// Show unsigned integer overflow.
+
+// Store any big integer in long long.
+
+// Create a char variable with ‘0’ and print numeric value.
+
+// Create two variables and print which holds bigger value.
+
+// Assign same value to 3 variables at once.
+
+// Create variable for seconds and convert to hours.
+
+// Track total salary of 5 workers using variables.
+
+// Take marks of 5 subjects in separate variables and print percentage.
+
+// Create a variable inside for loop initialization.
+
+// Show how variable declared inside switch block works.
+
+// Create a loop counter variable outside and inside loop.
+
+// Change value of global variable inside function.
+
+// Use static variable to count how many times function is called.
+
+// Use variable to store user age and classify.
+
+// Store month number and print number of days.
+
+// Demonstrate integer division loss.
+
+// Store today's date in three variables and print.
+
+// Use char variable to store grade and print message.
+
+// Check if character is vowel using variable flags.
+
+// Store two time values and compute difference.
+
+// Show memory address changes for different variables.
+
+// Create dynamic variable using new (pointer).
+
+// Create two reference variables for one integer.
+
+// Change value through pointer and show effect.
+
+// Print value using pointer and reference.
+
+// Demonstrate narrowing conversion with int and float.
+
+// Show type promotion result: int + double.
+
+// Input radius and compute circumference.
+
+// Store length and width and compute area.
+
+// Store temp in Fahrenheit and convert to Celsius.
+
+// Store minutes and convert to seconds.
+
+// Track highest number entered by user using variable.
+
+// Track lowest number using variable.
+
+// Store speed & time and compute distance.
+
+// Store number of days and print years.
+
+// Create a counter using static variable inside loop.
+
+// Use ternary operator to assign value to variable.
+
+// Create 3 variables for marks and print grade.
+
+// Store a large integer (1e12) and print.
+
+// Copy value of one variable to another.
+
+// Store base and height, compute triangle area.
+
+// Store price and quantity and compute bill.
+
+// Compare two string variables.
+
+// Take year variable & check if leap year.
+
+// Store weight and height and compute BMI.
+
+// Compute speed = distance/time using float.
+
+// Print default bool variable behavior.
+
+// Store ASCII value in char and print symbol.
+
+// Assign numeric value to char and print.
+
+// Demonstrate variable hiding inside loop.
+
+// Use volatile variable in infinite loop (demo).
+
+// Store values of polynomial and evaluate expression.
+
+// Modify global variable through pointer.
+
+// Track sum of 10 inputs using a single variable.
+
+// Track product of 10 inputs.
+
+// Store two coordinates x,y and compute distance.
+
+// Store marks and print pass/fail using boolean variable.
+
+
  return 0;
+
+ 
 }
