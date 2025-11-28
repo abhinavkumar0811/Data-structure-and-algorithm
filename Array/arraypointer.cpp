@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int main() {
@@ -52,15 +53,105 @@ for (int data=0; data<n; data++ ){
 }
 
 
-//  perform two sum of indics and return the el for target value
 
-int target = 9;
+//Q2 create a dynamic variable of array and allocate memory 
+
+    int n;
+    cout <<" Enter size of dyarr array: ";
+    cin >> n;
+
+    // dynamic arr 
+    int* dyarr = new int[n];
+
+    // access the no of el 
+    int size_of_el = sizeof(dyarr) / sizeof(dyarr[0]);   // this will not
+        //  accaptable in dy memory because it ref to pointer and pointer type is depends of the cpu architecture
 
 
+    for (int el=0; el<n; el=el+1){
+
+        cout << "Enter element for push in dynamic arr: ";
+        cin >> dyarr[el];
+
+    }
 
 
+    // access all element using indics
+    for (int el=0; el<n; el=el+1){
+        cout<< *(dyarr+el) << " ";      //operator precidence concept - pending ( hight value priority )
+    }
+    cout << "\n";
+    cout << "el memo add " << "\n";
+
+    //access all add of dyarr el
+    for (int add=0; add<n; add++){
+        cout << dyarr+add << " ";
+    }
+    cout << endl;
+    cout << "\n";
 
 
+//Q3 find maximum and minium el in the array
+    
+    int size_of_arr;
+    cout << "Enter size of arr: ";
+    cin >> size_of_arr;
+    
+    int *arr = new int[size_of_arr];
+    
+    
+    int idx=0;
+    for (; idx<size_of_arr; idx=idx+1){
+        
+        cout << "Enter el for arr: ";
+        cin >> arr[idx];
+        
+    }
+    
+    // min max 
+    
+    int min_el = INT_MAX;
+    int max_el = INT_MIN;
+    for(int item=0; item<size_of_arr; item++){
+        
+        if (min_el > arr[item]){
+            min_el = arr[item];
+        }
+        
+        if (max_el < arr[item]){
+            max_el = arr[item];
+        }
+        
+    }
+    
+    cout << "Minimum el of this elemennt is: " << min_el <<"\n";
+    cout << "Maximum el of this elemennt is: " << max_el <<"\n";
+    
+    
+    //Q4 find the second maxium and minimum el in array 
+    
+    int second_max_el = INT_MIN;
+    int second_min_el = INT_MAX;
+    
+    for (int item=0; item<size_of_arr; item=item+1){
+        
+        if (arr[item] != min_el && second_min_el > arr[item]){
+            second_min_el = arr[item];
+        }
+        
+        if (arr[item] != max_el && second_max_el < arr[item]){
+            second_max_el = arr[item];
+        }
+    }
+    
+//Q5 perform two sum of indics and return the el for target value
+    
+    int target = 9;
+    
+    
+    
+    
+    
     return 0;
 }
 
@@ -112,3 +203,7 @@ int target = 9;
 
 // What happens when you do ptr++ for int (*ptr)[5] = &arr;
 // Write a function that takes a pointer to an array of 5 integers as an argument and prints its elements.
+
+
+
+

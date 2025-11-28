@@ -1,60 +1,63 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
+#include <climits>
 using namespace std;
 
-int main() {
-   
-   
+int main(){
+
+// find maximum and minium el in the array
+
+int size_of_arr;
+cout << "Enter size of arr: ";
+cin >> size_of_arr;
+
+int *arr = new int[size_of_arr];
 
 
-int arr[5];
-
-int n = sizeof(arr) / sizeof(arr[0]);   // more protable way instead of this
-int demo = sizeof(arr) / sizeof(int); // instead of this
-
-// push manually el in the arr 
-for(int item=0; item<n; item++){
-
-    cout << "Enter el for push in arr array :: ";
-    cin >> arr[item];
+int idx=0;
+for (; idx<size_of_arr; idx=idx+1){
+    
+    cout << "Enter el for arr: ";
+    cin >> arr[idx];
+    
 }
 
+// finding the minimum and maximum el 
 
-// by the array idicis
-for(int el=0; el<n; el++){
-    cout << arr[el] << " ";
-}
-cout  << "\n";
-cout << "Enter arr el using pointer arthimetic " << endl;
+int min_el = INT_MAX;
+int max_el = INT_MIN;
+for(int item=0; item<size_of_arr; item++){
 
+    if (min_el > arr[item]){
+        min_el = arr[item];
+    }
 
-// with the pointer arthimetic
-
-int *p = arr;  // it will access the first el of the array 
-
-for (int el=0; el<n; el++){
-    cout << *(p+el) << " ";
-}
-cout << "\n";
-cout << "Arr memo address using pointer " << "\n";
-
-
-// with the pointer arthimetic memo add
-for(int item =0; item<n; item++){
-    cout << p+item<< " ";
-}
-cout << endl;
-cout << "mem add using array idics" << "\n";
-
-
-// for printing memo location 
-for (int data=0; data<n; data++ ){
-    cout << &arr[data] << " ";
+    if (max_el < arr[item]){
+        max_el = arr[item];
+    }
+    
 }
 
+cout << "Minimum el of this elemennt is: " << min_el <<"\n";
+cout << "Maximum el of this elemennt is: " << max_el <<"\n";
 
 
 
+int second_max_el = INT_MIN;
+int second_min_el = INT_MAX;
+
+for (int item=0; item<size_of_arr; item=item+1){
+
+    if (arr[item] != min_el && second_min_el > arr[item]){
+        second_min_el = arr[item];
+    }
+
+    if (arr[item] != max_el && second_max_el < arr[item]){
+        second_max_el = arr[item];
+    }
+}
+
+cout << "Second maximum element is: " << second_max_el << "\n";
+cout << "Second minimum element is: " << second_min_el << "\n";
 
     return 0;
 }
