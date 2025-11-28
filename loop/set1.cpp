@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+#include <climits>
+
 
 int main(){
     
@@ -106,6 +108,34 @@ int main(){
 
 //Q12 Find power (a^b) using loop.
 
+//Q13 find the maximum and minimum element from given array
+
+    int arr_el[5] = {233,434,23,434,2};
+    int size_arr_el = sizeof(arr_el) / sizeof(int);
+    
+
+    int maximum_el = INT_MIN;
+    int minimum_el = INT_MAX;
+
+    for (int idx=0; idx<size_arr_el; idx++){    // n-1
+
+        // for maximum
+        if(arr_el[idx] >= maximum_el){
+            maximum_el = arr_el[idx];
+        }
+
+        if (arr_el[idx]<= minimum_el){
+            minimum_el = arr_el[idx];
+        }
+    }
+
+    cout << "Maximum element is: " << maximum_el << endl;
+    cout << "Minimum element is: " << minimum_el << endl;
+    
+
+    
+
+
 // Count vowels in a string.
 
 // Count consonants in a string.
@@ -195,3 +225,5 @@ int main(){
 
     return 0;
 }
+
+

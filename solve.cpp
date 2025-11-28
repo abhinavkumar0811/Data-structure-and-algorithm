@@ -1,51 +1,60 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 
 int main() {
-    
+   
+   
 
 
-// Print the sum of the first N natural numbers
-// ➤ Input: N = 5 → Output: 15
+int arr[5];
 
-int number;
+int n = sizeof(arr) / sizeof(arr[0]);   // more protable way instead of this
+int demo = sizeof(arr) / sizeof(int); // instead of this
 
-cout << "Enter number: ";
-cin >> number;
+// push manually el in the arr 
+for(int item=0; item<n; item++){
 
-
-int idx = 1;
-int sum = 0;
-for (; idx <= number; idx++){
-    sum += idx;
+    cout << "Enter el for push in arr array :: ";
+    cin >> arr[item];
 }
 
-cout << "Sum of n natural number is: " << sum << endl;
-// Print all even numbers between 1 to 50
 
-// Print the multiplication table of a given number
-// ➤ Input: 5
-// ➤ Output: 5 10 15 20 25 30 35 40 45 50
+// by the array idicis
+for(int el=0; el<n; el++){
+    cout << arr[el] << " ";
+}
+cout  << "\n";
+cout << "Enter arr el using pointer arthimetic " << endl;
 
-// Find the factorial of a number using for loop
-// ➤ Input: 5 → Output: 120
 
-// Print the reverse of a number
-// ➤ Input: 1234 → Output: 4321
+// with the pointer arthimetic
 
-// Print Fibonacci series up to N terms
-// ➤ Input: 6 → Output: 0 1 1 2 3 5
+int *p = arr;  // it will access the first el of the array 
 
-// Find the sum of digits of a number
-// ➤ Input: 1234 → Output: 10
+for (int el=0; el<n; el++){
+    cout << *(p+el) << " ";
+}
+cout << "\n";
+cout << "Arr memo address using pointer " << "\n";
 
-// Check if a number is prime or not using for loop
+
+// with the pointer arthimetic memo add
+for(int item =0; item<n; item++){
+    cout << p+item<< " ";
+}
+cout << endl;
+cout << "mem add using array idics" << "\n";
+
+
+// for printing memo location 
+for (int data=0; data<n; data++ ){
+    cout << &arr[data] << " ";
+}
+
 
 
 
 
     return 0;
 }
-
-
-
