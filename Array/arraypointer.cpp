@@ -149,6 +149,65 @@ for (int data=0; data<n; data++ ){
     int target = 9;
     
     
+
+//Q6 convert a size of array from small to larger 
+
+// concept - growth and resizing 
+// step - reallocate, copy old el, delete old block, update your pointer to point the new block 
+
+// current array 
+int *arr = new int[4];
+int temp[4] = {3,5,6,7};
+copy(temp, temp+4, arr);  // std:: copy - method
+
+
+// current arr value 
+cout << "This is the current element of arr" << "\n";
+
+for(int item=0; item<4; item++){
+    cout << arr[item] << " ";
+}
+cout << "\n";
+
+
+// intilize new value 
+
+// reallocate 
+int size;
+cout << "Enter size of new array: ";
+cin >> size;
+
+int *newarr = new int[size];
+
+// copy old arr el to new array 
+for (int item=0; item<4; item++){
+    newarr[item] = arr[item];
+
+}
+
+// it will return garbage value where we not give the el  
+// make garbage value to 0
+int item =4; // or make item == size of array which store for dynamic 
+for (; item<size; item=item+1){
+    newarr[item] = 0;
+}
+
+// free old arr block 
+delete[] arr;
+arr = newarr;
+
+
+cout << "current array el" <<"\n";
+// print current el 
+for (int item=0; item<size; item++){
+    cout << arr[item] << " ";
+}
+cout <<"\n";
+
+
+
+
+
     
     
     

@@ -1,63 +1,105 @@
 #include <iostream>
-#include <climits>
 using namespace std;
+
 
 int main(){
 
-// find maximum and minium el in the array
+// // find the unique number in the array 
 
-int size_of_arr;
-cout << "Enter size of arr: ";
-cin >> size_of_arr;
+// int p[5] = {1,2,1,2,4};
+// int size = sizeof(p) / sizeof(p[0]);
 
-int *arr = new int[size_of_arr];
+// int unique_el = 0;
+// bool isunique_el = true;
+
+// for (int item=0; item<size; item=item+1){
+
+//     for (int el=0; el<size;  el++){
+
+//         if (item !=el &&  p[item] == p[el]){
+            
+//             isunique_el = false;
+//             break;
+//         }
 
 
-int idx=0;
-for (; idx<size_of_arr; idx=idx+1){
-    
-    cout << "Enter el for arr: ";
-    cin >> arr[idx];
-    
+//         if(isunique_el){
+//             unique_el = p[item];
+//         }
+//     }
+// }
+
+// cout << unique_el;
+
+
+
+
+// convert a size of array from small to larger 
+// concept - growth and resizing 
+// step - reallocate, copy old el, delete old block, update your pointer to point the new block 
+
+// current array 
+int *arr = new int[4];
+int temp[4] = {3,5,6,7};
+copy(temp, temp+4, arr);  // std:: copy - method
+
+
+// current arr value 
+cout << "This is the current element of arr" << "\n";
+
+for(int item=0; item<4; item++){
+    cout << arr[item] << " ";
+}
+cout << "\n";
+
+
+// intilize new value 
+
+// reallocate 
+int size;
+cout << "Enter size of new array: ";
+cin >> size;
+
+int *newarr = new int[size];
+
+// copy old arr el to new array 
+for (int item=0; item<4; item++){
+    newarr[item] = arr[item];
+
 }
 
-// finding the minimum and maximum el 
-
-int min_el = INT_MAX;
-int max_el = INT_MIN;
-for(int item=0; item<size_of_arr; item++){
-
-    if (min_el > arr[item]){
-        min_el = arr[item];
-    }
-
-    if (max_el < arr[item]){
-        max_el = arr[item];
-    }
-    
+// it will return garbage value where we not give the el  
+// make garbage value to 0
+int item =4; // or make item == size of array which store for dynamic 
+for (; item<size; item=item+1){
+    newarr[item] = 0;
 }
 
-cout << "Minimum el of this elemennt is: " << min_el <<"\n";
-cout << "Maximum el of this elemennt is: " << max_el <<"\n";
+// free old arr block 
+delete[] arr;
+arr = newarr;
+
+
+cout << "current array el" <<"\n";
+// print current el 
+for (int item=0; item<size; item++){
+    cout << arr[item] << " ";
+}
+cout <<"\n";
 
 
 
-int second_max_el = INT_MIN;
-int second_min_el = INT_MAX;
 
-for (int item=0; item<size_of_arr; item=item+1){
-
-    if (arr[item] != min_el && second_min_el > arr[item]){
-        second_min_el = arr[item];
-    }
-
-    if (arr[item] != max_el && second_max_el < arr[item]){
-        second_max_el = arr[item];
-    }
+return 0;
 }
 
-cout << "Second maximum element is: " << second_max_el << "\n";
-cout << "Second minimum element is: " << second_min_el << "\n";
+// // while loop best for known number
+// int item =0;
+// while (item<size){
 
-    return 0;
-}
+//     cout << "Enter element for new array: ";
+//     cin >> newarr[item];
+
+//     item = item + 1;
+
+// }
