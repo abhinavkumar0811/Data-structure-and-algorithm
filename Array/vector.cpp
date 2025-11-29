@@ -5,9 +5,32 @@ using namespace std;
 
 int main(){
 
+    //Q1  vector  all syntex
+    vector <int> arr = {1,2,3,4,5};
+    
+    for (int item : arr){
+        cout << item << " ";
+    }
+    cout << "\n";
+
+    vector <int> twoArr(5,0);
+    for (int item : twoArr){
+        cout << item <<"\n";
+    }
+
+    vector <int> elArr;
+    elArr = {1};
+    elArr = {3,4,5,6,7,8};
+    
+    elArr.push_back(13);
+
+    for (int item : elArr){
+        cout << item << " ";
+    }
+    cout << "\n";
 
 
-//Q2 make a vector and intilize and print its value 
+    //Q2 make a vector and intilize and print its value 
     int size_of_vector;
     cout << "Enter size of vector: ";
     cin >> size_of_vector;
@@ -38,6 +61,11 @@ int main(){
 
 
     cout << "\n";
+
+
+
+
+
 
     return 0;
 }

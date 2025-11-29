@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 
     
-// Declare an integer array of size 5 and initialize it with values 1, 2, 3, 4, 5.
+//Q1 Declare an integer array of size 5 and initialize it with values 1, 2, 3, 4, 5.
 int arr[5] = {1,2,3,4,5};
 cout << arr << endl;    // it will print the memo add
 
